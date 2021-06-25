@@ -1,6 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
 }
+
+.color-nav { background-color:#fbc040; color: '#2A4058'}
+/* .color-nav-dropdown {color: '#2A4058';} */
 
 .App-logo {
   height: 40vmin;
