@@ -36,8 +36,8 @@ export default function OrderMobile () {
       <><h3 style={{color: '#FBB040', margin: '8px 0'}}>Place Order</h3>
       <List title="Place Order" className="date-picker-list" style={{ padding: '4px' }}>
         <List.Item>{<h3>Vehicle Information</h3>}</List.Item>
-        <List.Item><InputItem clear value={brand} onChange={value => setBrand(value)}>Brand</InputItem></List.Item>
-        <List.Item><InputItem clear value={model} onChange={value => setModel(value)} >Model</InputItem></List.Item>
+        <InputItem clear value={brand} onChange={value => setBrand(value)}>Brand</InputItem>
+        <InputItem clear value={model} onChange={value => setModel(value)} >Model</InputItem>
         <Picker value={transmission} onChange={value => setTransmission(value)} data={type} cols={1} title="Type" extra=" ">
           <List.Item arrow="horizontal" style={{marginLeft: '15px'}}>Transmission</List.Item>
         </Picker>
@@ -46,10 +46,10 @@ export default function OrderMobile () {
         </Picker>
         <br/>
         <h3 style={{marginLeft: '15px'}}>Buyer Information</h3>
-        <List.Item><InputItem clear value={seller} onChange={value => setSeller(value)}>Buyer</InputItem></List.Item>
-        <List.Item><InputItem clear value={phone} onChange={value => setPhone(value)}>Phone No.</InputItem></List.Item>
-        <List.Item><InputItem clear value={email} onChange={value => setEmail(value)}>Email</InputItem></List.Item>
-        <List.Item><InputItem clear value={price} onChange={value => setPrice(value)}>Budget</InputItem></List.Item>
+        <InputItem clear value={seller} onChange={value => setSeller(value)}>Buyer</InputItem>
+        <InputItem clear value={phone} onChange={value => setPhone(value)}>Phone No.</InputItem>
+        <InputItem clear value={email} onChange={value => setEmail(value)}>Email</InputItem>
+        <InputItem clear value={price} onChange={value => setPrice(value)}>Budget</InputItem>
         <List.Item>
           <Button type="primary" size="small" inline onClick={onSubmit}>Submit</Button>
         </List.Item>

@@ -60,7 +60,7 @@ function App() {
     <Image preview={false} style={{marginLeft: 5, height: 50, width: 55}} src="/logo.png" alt="Tamar Logo"/>
     </Col> */}
     <Col flex='auto'>
-    <Descriptions title="Tamar Trading PLC" style={{maxWidth: 300}}>
+    <Descriptions title="Tamar Trading PLC">
         <Descriptions.Item label={<MailFilled/>}>tamartransitoffice@gmail.com</Descriptions.Item>
         <Descriptions.Item label={<PhoneFilled/>}>+251-964-323232</Descriptions.Item> 
         <Descriptions.Item label={<HomeFilled/>}>Bole Atlas, Addis Ababa, Ethiopia</Descriptions.Item> 
