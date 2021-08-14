@@ -48,7 +48,6 @@ function App() {
             <Route exact path="/auto/buy" component={Catalog} />
             <Route exact path="/auto/buy/order" component={OrderMobile} />
             <Route exact path="/transit" component={Transit} />
-            
             <Route exact path="/auto/sell" component={OfferMobile} />
             <Route exact path={`/auto/buy/detail/:car_key`} component={AutoDetail}></Route>
         </Switch>
@@ -56,9 +55,6 @@ function App() {
     </Router>
     <Footer style={footerStyle}>  
     <Row>
-    {/* <Col>
-    <Image preview={false} style={{marginLeft: 5, height: 50, width: 55}} src="/logo.png" alt="Tamar Logo"/>
-    </Col> */}
     <Col flex='auto'>
     <Descriptions title="Tamar Trading PLC">
         <Descriptions.Item label={<MailFilled/>}>tamartransitoffice@gmail.com</Descriptions.Item>
@@ -66,18 +62,7 @@ function App() {
         <Descriptions.Item label={<HomeFilled/>}>Bole Atlas, Addis Ababa, Ethiopia</Descriptions.Item> 
       </Descriptions>
     </Col>
-    {/* <Col flex='auto'>
-    <Descriptions title="Logistic Department" style={{maxWidth: 300}}>
-        <Descriptions.Item label={<MailFilled />}>Email</Descriptions.Item>
-        <Descriptions.Item label={<PhoneFilled  />}>Phone number</Descriptions.Item> 
-      </Descriptions>
-    </Col>
-    <Col flex='auto'>
-    <Descriptions title="Sells Department" style={{maxWidth: 300}}>
-        <Descriptions.Item label={<MailFilled />}>Email</Descriptions.Item>
-        <Descriptions.Item label={<PhoneFilled  />}>Phone number</Descriptions.Item> 
-      </Descriptions>
-    </Col> */}
+
     </Row>    
     </Footer>
 </Layout> 
